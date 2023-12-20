@@ -4,6 +4,11 @@
  */
 public class Coins {
 	public static void main(String[] args) {
-		// Put your code here
+		// Gets and parses The quantity of cents from the command-line
+		int total_cents = Integer.parseInt(args[0]);
+
+		int num_of_quarters = (total_cents / 25);
+		int num_of_cents = (total_cents % 25);
+		System.out.println("Use " + num_of_quarters + " quarters and " + num_of_cents + " cents");
 	}
 }
